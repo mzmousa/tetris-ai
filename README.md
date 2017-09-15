@@ -4,15 +4,13 @@
 
 *This will start the algorithm at generation zero. To see its evolved form at generation 25, press SHIFT once it opens*
 
-## This is a Tetris AI that learns to maximize score using a genetic algorithm.
-
 ![25th Generation AI](https://github.com/mzmousa/tetris-ai/blob/master/tetris_gameplay.gif?raw=true)
 
 *AI running after 25 generations of evolution*
 
 ## How it works
 
-This AI uses evolutionary techniques to improve over time. Through selection, crossover, and mutation, the AI will learn to get the highest score in as few moves as possible (we'll aim for 500 moves).
+This AI uses genetic programming / evolutionary techniques to improve over time. Through selection, crossover, and mutation, the AI will learn to get the highest score in as few moves as possible (we'll aim for 500 moves).
 
 Genetic algorithms work by creating a population of "genomes" that have multiple "genes", representing parameters for the algorithm. Each of these individuals in the population is evaluated and a "fitness" score for each genome is produced. The fittest individuals would reproduce and pass favourable genes down to the next generation. Mutation also occurs where genes are randomly modified in hopes of creating more beneficial features.
 
