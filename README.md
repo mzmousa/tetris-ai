@@ -1,14 +1,14 @@
 ## How to play
+1. Click [here](https://cdn.rawgit.com/mzmousa/tetris-ai/1bc4373f/Tetris.html)
+2. Clone this repo and open the Tetris.html file in your web browser.
 
-Clone this the .html file in your web browser and the AI will start playing Tetris.
-
-*This will start the algorithm at generation zero. To see its evolved form, just press SHIFT once it opens*
+*This will start the algorithm at generation zero. To see its evolved form at generation 25, press SHIFT once it opens*
 
 ## Genetic Algorithms and Tetris
 
 #### This is An AI that learns to play Tetris using a Genetic Algorithm.
 
-![running](gif)
+![25th Generation AI](https://github.com/mzmousa/tetris-ai/blob/master/generation_25.gif?raw=true)
 
 *AI running after 25 generations of evolution*
 
@@ -38,13 +38,13 @@ The step-by-step algorithm is as follows:
 ```
 All the parameters in a genome refer to a weight value:
 
-**id**: The unique identifier for the genome
-**rowsCleared**: The number of rows cleared by the given move
-**weightedHeight**: The absolute height of the highest column
-**cumulativeHeight:**  The sum of all the columns' heights
-**relativeHeight**: The highest column minus the lowest column
-**holes**: All the empty cells with a block above them
-**roughness**: The sum of height differences between adjacent columns
+**id**: The unique identifier for the genome  
+**rowsCleared**: The number of rows cleared by the given move  
+**weightedHeight**: The absolute height of the highest column  
+**cumulativeHeight:**  The sum of all the columns' heights  
+**relativeHeight**: The highest column minus the lowest column  
+**holes**: All the empty cells with a block above them  
+**roughness**: The sum of height differences between adjacent columns  
 
 2. Depending on the genome values, the AI will exhaustively try every possible move given an upcoming shape to optimize for the highest rating, where a rating follows this linear combination:
 
@@ -80,15 +80,7 @@ If you've tried running the AI already, you'll notice the first few individuals 
 
 It would make intuitive sense that in order to maximize score, we would want to maximize the number of rows cleared and minimize all the other parameters (heights, holes, roughness) when calculating move ratings. This seemed to be true in the first few generations, however, once the number of moves started approaching the limit (500) in a generation, the relativeHeight parameter started to increase. We would start seeing the AI stacking blocks up to clear multiple rows at once, getting bonuses of up to 10x as compared to clearing each line individually, which is a **strategy used by high level players** used to maximize score. 
 
-(high level strategy)[img]
-
-## Dependencies
-
-They all come prepackaged.
-
-## Usage
-
-Just open the .html file in your web browser and the AI will start playing Tetris.
+![Multiple Clears](https://github.com/mzmousa/tetris-ai/blob/master/multiple_clears.png?raw=true)
 
 ## References
 
