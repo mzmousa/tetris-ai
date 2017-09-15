@@ -4,9 +4,7 @@
 
 *This will start the algorithm at generation zero. To see its evolved form at generation 25, press SHIFT once it opens*
 
-## Genetic Algorithms and Tetris
-
-#### This is An AI that learns to play Tetris using a Genetic Algorithm.
+## This is a Tetris AI that learns to maximize score using a genetic algorithm.
 
 ![25th Generation AI](https://github.com/mzmousa/tetris-ai/blob/master/tetris_gameplay.gif?raw=true)
 
