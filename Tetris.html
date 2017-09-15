@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Tetris</title>
+ <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+ <style>
+   body {
+    background-color: #272821;
+  }
+  .text {
+    color: #706C5A;
+    font-family: Inconsolata, Courier, monospace;
+    font-size: 20px;
+  }
+  #output {
+    float: left;
+    padding-left: 20%;
+  }
+  #score {
+    padding-left: 55%;
+  }
+  #instructions {
+    float: left;
+    position: absolute;
+    left: 1.5%;
+    bottom: 3%;
+    font-size: small;
+    line-height: 110%;
+  }
+  a:link {
+    color: inherit;
+  }
+</style>
+</head>
+<body>
+  <div id="output" class="text"></div>
+  <div id="score" class="text"></div>
+  <div id="instructions" class="text"><br /><b>[Key Commands]</b><br />Load Fully Evolved Archive: [SHIFT]<br />Inspect Move Selection: [F]<br />Speed Up: [E]<br />Slow Down: [D]<br />Toggle AI: [A]<br />Move Shape: [Arrow Keys]<br />Rotate Shape: [Up Arrow]<br />Drop Shape: [Down Arrow]<br />Save State: [Q]<br />Load State: [W]<br />Get Archive: [G]<br />Load Archive: [R]</div>
+  <script src="./tetnet.js"></script>
+  <script src="./archive.js"></script>
+</body>
+</html>
