@@ -8,7 +8,7 @@
 
 #### This is An AI that learns to play Tetris using a Genetic Algorithm.
 
-![25th Generation AI](https://github.com/mzmousa/tetris-ai/blob/master/generation_25.gif?raw=true)
+![25th Generation AI](https://github.com/mzmousa/tetris-ai/blob/master/tetris_gameplay.gif?raw=true)
 
 *AI running after 25 generations of evolution*
 
