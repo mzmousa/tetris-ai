@@ -1,5 +1,5 @@
 ## How to play
-1. **Click [here](https://cdn.rawgit.com/mzmousa/tetris-ai/1bc4373f/Tetris.html)!**
+1. **Click [here](https://cdn.rawgit.com/mzmousa/tetris-ai/1bc4373f/Tetris.html)**
 2. Clone this repo and open the Tetris.html file in your web browser.
 
 *This will start the algorithm at generation zero. To see its evolved form at generation 25, press SHIFT once it opens*
